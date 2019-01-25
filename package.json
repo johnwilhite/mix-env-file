@@ -1,0 +1,26 @@
+{
+  "name": "mix-env-file",
+  "version": "1.0.0",
+  "description": "Allows Laravel Mix to use to a specific .env file",
+  "main": "mix-env-file.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnwilhite/mix-env-file.git"
+  },
+  "keywords": [
+    "laravel",
+    "mix",
+    "dotenv",
+    "env",
+    "environment"
+  ],
+  "author": "John Wilhite",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnwilhite/mix-env-file/issues"
+  },
+  "homepage": "https://github.com/johnwilhite/mix-env-file#readme"
+}
