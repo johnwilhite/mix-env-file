@@ -21,7 +21,7 @@ Update scripts in `package.json` to include a `ENV_FILE` environment variable:
 "dev": "NODE_ENV=development ENV_FILE=./.env.test node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
 ```
 
-OR run npm/yarn with an environment variables:
+OR run npm/yarn with an environment variable:
 ```bash
  ENV_FILE=.env.production yarn run production
 ```
