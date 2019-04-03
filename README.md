@@ -28,7 +28,8 @@ let mix = require('laravel-mix');
 require('mix-env-file');
 
 // Then pass your file to this plugin
-mix.env(process.env.ENV_FILE || '.env');
+// If this is not set, this plugin won't do anything and the default .env variables will remain
+mix.env(process.env.ENV_FILE);
 
 ...
 ```
