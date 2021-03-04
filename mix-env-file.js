@@ -21,7 +21,7 @@ mix.extend(
                 let reference = /\$\{([^\}]+)\}/;
 
                 for (let k in envConfig) {
-                    let ref = envConfig[k].match(reference)
+                    let ref = envConfig[k].match(reference);
                     if (ref && ref[1] && envConfig[ref[1]]) {
                         process.env[k] = envConfig[ref[1]];
                     } else {
