@@ -1,6 +1,6 @@
 {
   "name": "mix-env-file",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Allows Laravel Mix to use to a specific .env file",
   "main": "mix-env-file.js",
   "scripts": {
