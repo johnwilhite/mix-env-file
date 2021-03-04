@@ -17,9 +17,16 @@ mix.extend(
                     console.error('Unable to parse env file at ' + file + '\r\nPlease make sure this file exists and is formatted correctly.');
                     process.exit();
                 }
+                
+                let reference = /\$\{([^\}]+)\}/;
 
                 for (let k in envConfig) {
-                    process.env[k] = envConfig[k];
+                    let ref = envConfig[k].match(reference);
+                    if (ref && ref[1] && envConfig[ref[1]]) {
+                        process.env[k] = envConfig[ref[1]];
+                    } else {
+                        process.env[k] = envConfig[k];
+                    }
                 }
             }
         }
